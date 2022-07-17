@@ -168,7 +168,7 @@ class SceneManager:
         level = stats.get_level() % BASE_LEVELS
         filename = LEVEL_FILE.format(level)
 
-        with open(filename, 'rt') as file:
+        with open(filename, 'r') as file:
             reader = csv.reader(file, skipinitialspace=True)
 
             for r, row in enumerate(reader):
